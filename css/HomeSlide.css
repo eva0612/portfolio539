@@ -1,0 +1,156 @@
+#SkipToMainContent{
+	display: none;
+}
+#nav{
+	position:relative;
+}
+header{
+	display:inline-flex;
+}
+.navbar{
+	position:absolute;
+}
+.container{
+	font-family:"cochin";
+	width:1050px;
+
+}
+.navbar-brand{
+	float:left;
+	padding-top:2rem;
+	margin-right: 1rem;
+	padding-left:5rem;
+	font:"cochin";
+	font-size:2.5em;
+	color:black;
+	text-decoration:none;
+
+
+}
+ul{
+	float:right;
+	font:"cochin";
+	color:black;
+}
+
+
+.navbar-nav{
+	float: right;
+	margin-right:0;
+	display: inline-block;
+	position:relative;
+	padding-left:20;
+	font:"cochin";
+	padding-top:45px;
+}
+/*.test{
+	border: 5px solid;
+}*/
+
+/*.test2{
+	display: block;
+	border: 5px solid;
+	float: right;
+}
+*/
+
+
+}
+
+.nav-item{
+	list-style-type: none;
+	padding-bottom:0;
+
+}
+li{
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+	font-family: "cochin";
+	color:black;
+	text-decoration: none;
+	display:inline;
+
+}
+.nav-item-link{
+	text-decoration: none;
+	color:black;
+}
+
+.page-header{
+	margin-top:0;
+}
+
+
+
+
+<!--right side bar-->
+#fullPage-nav { 
+	_display: none; 
+	font-size: 12px;
+}
+
+#fullPage-nav li a { 
+	float: right; 
+	width: 21px; 
+	height: 21px; 
+	color: #8F9DA4; 
+	text-decoration: none; 
+	text-align: left; 
+}
+#fullPage-nav li .active { 
+	background-position: 0 bottom;
+}
+
+.fullPage-tooltip { 
+	float: left; 
+	top: 0; 
+	text-align: left;
+	margin-right: 5px; 
+	font: 18px "cochin"; 
+	color: white; 
+	line-height: 25px;
+}
+
+.section { 
+	position: relative; 
+	overflow: hidden; 
+	z-index: -1;
+}
+.section .bg { 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	width: 100%; 
+	height: 100%;
+}
+.section .bg img { 
+	display: block; 
+	width: 100%; 
+	height: 100%;
+}
+
+
+.copyright { 
+	position: absolute; 
+	left: 0; 
+	bottom: 20px; 
+	width: 100%; 
+	text-align: center; 
+	font-size: 0;
+	font:"cochin";
+}
+.copyright a, .copyright span { 
+	margin: 0 7px; 
+	font-size: 12px; 
+	color: #fff;
+	font:"cochin";
+}
+
+.cr{
+	font:"cochin";
+}
+.emailaddress{
+	font:"cochin";
+}
+
+
