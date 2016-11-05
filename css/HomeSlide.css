@@ -1,79 +1,58 @@
 #SkipToMainContent{
-	display: none;
+	// display: none;
+	// border: 1px solid red;
 }
 #nav{
-	position:relative;
-}
-header{
-	display:inline-flex;
-}
-.navbar{
-	position:absolute;
-}
-.container{
-	font-family:"cochin";
-	width:1050px;
+	position: absolute;
+	display: flex;
+	z-index: 100;
+	justify-content: space-between;
 
 }
+
+.navbar{
+	position:absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+
+
+}
+
 .navbar-brand{
-	float:left;
-	padding-top:2rem;
-	margin-right: 1rem;
 	padding-left:5rem;
 	font:"cochin";
 	font-size:2.5em;
 	color:black;
 	text-decoration:none;
-
-
+	display: inline-flex;
 }
 ul{
-	float:right;
 	font:"cochin";
-	color:black;
 }
 
 
 .navbar-nav{
-	float: right;
-	margin-right:0;
-	display: inline-block;
-	position:relative;
-	padding-left:20;
 	font:"cochin";
-	padding-top:45px;
-}
-/*.test{
-	border: 5px solid;
-}*/
-
-/*.test2{
-	display: block;
-	border: 5px solid;
-	float: right;
-}
-*/
-
-
+	display: inline-flex;
+	padding-right:5rem;
 }
 
 .nav-item{
 	list-style-type: none;
 	padding-bottom:0;
-
+	font-size:1.2em;
 }
 li{
 	padding-left:0.5rem;
 	padding-right:0.5rem;
 	font-family: "cochin";
 	color:black;
-	text-decoration: none;
+	text-decoration: underline;
 	display:inline;
 
-}
-.nav-item-link{
-	text-decoration: none;
-	color:black;
 }
 
 .page-header{
@@ -106,7 +85,7 @@ li{
 	top: 0; 
 	text-align: left;
 	margin-right: 5px; 
-	font: 18px "cochin"; 
+	font: 15px "cochin"; 
 	color: white; 
 	line-height: 25px;
 }
@@ -142,15 +121,19 @@ li{
 .copyright a, .copyright span { 
 	margin: 0 7px; 
 	font-size: 12px; 
-	color: #fff;
-	font:"cochin";
+	color: #fff;}
+
+
+@media screen and (max-width: 600px) {
+
+	.navbar-brand{
+		border: 2px solid yellow;
+	}
+
 }
 
-.cr{
-	font:"cochin";
-}
-.emailaddress{
-	font:"cochin";
+div#superContainer{
+	z-index: 0;
 }
 
 
