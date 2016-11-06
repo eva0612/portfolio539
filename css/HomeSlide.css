@@ -15,7 +15,9 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: baseline;
+	padding-top:20px;
+	/*border: 5px solid purple;*/
 
 
 
@@ -23,8 +25,8 @@
 
 .navbar-brand{
 	padding-left:5rem;
+	font-size:2em;
 	font:"cochin";
-	font-size:2.5em;
 	color:black;
 	text-decoration:none;
 	display: inline-flex;
@@ -44,6 +46,7 @@ ul{
 	list-style-type: none;
 	padding-bottom:0;
 	font-size:1.2em;
+	font:"cochin";
 }
 li{
 	padding-left:0.5rem;
@@ -136,4 +139,38 @@ div#superContainer{
 	z-index: 0;
 }
 
+.topimage{
+	width:100%;
+	background-size:cover;
+}
+.topimage img{
+	padding-top:65px;
+	width:100%;
+}
+
+/*Resume Page*/
+
+.resume{
+	/*border:3px solid grey;*/
+	width:70%;
+	margin:auto;
+	font-family: "cochin";
+	padding:20px;
+}
+li{
+	text-decoration: none;
+	font:"cochin";
+	font-size:15px;
+}
+.resumetitle{
+	text-align: center;
+}
+
+h3{
+	text-decoration: underline;
+	font-weight: bold;
+}
+h5{
+	text-indent: 30px;
+}
 
