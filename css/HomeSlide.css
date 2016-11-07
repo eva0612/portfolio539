@@ -1,7 +1,20 @@
-#SkipToMainContent{
-	// display: none;
-	// border: 1px solid red;
+/*#navbar-brand{
+	border:3px black;
+}*/
+#navbar-brand{
+	text-shadow: 5px 5px 10px black;
 }
+#art{
+	text-shadow: 3px 2px 5px black;
+}
+#resume{
+	text-shadow: 3px 2px 5px black;
+}
+#biography{
+	text-shadow: 3px 2px 5px black;
+}
+
+/*Homepage*/
 #nav{
 	position: absolute;
 	display: flex;
@@ -16,16 +29,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	padding-top:20px;
-	/*border: 5px solid purple;*/
-
-
+	padding-top:25px;
 
 }
 
 .navbar-brand{
 	padding-left:5rem;
-	font-size:2em;
+	font-size:2.5em;
 	font:"cochin";
 	color:black;
 	text-decoration:none;
@@ -45,7 +55,7 @@ ul{
 .nav-item{
 	list-style-type: none;
 	padding-bottom:0;
-	font-size:1.2em;
+	font-size:1em;
 	font:"cochin";
 }
 li{
@@ -53,16 +63,18 @@ li{
 	padding-right:0.5rem;
 	font-family: "cochin";
 	color:black;
-	text-decoration: underline;
 	display:inline;
-
+	text-decoration:none;
+}
+.nav-item-link{
+	text-decoration: none;
+	font-family: "cochin";
+	color:black;
 }
 
 .page-header{
 	margin-top:0;
 }
-
-
 
 
 <!--right side bar-->
@@ -91,6 +103,8 @@ li{
 	font: 15px "cochin"; 
 	color: white; 
 	line-height: 25px;
+	box-shadow: rgba(0, 0, 0, 1) 0 2px 10px;
+
 }
 
 .section { 
@@ -135,10 +149,15 @@ li{
 
 @media screen and (max-width: 600px) {
 
-	.navbar-brand{
-		border: 2px solid yellow;
+	.navbar-nav{
+		display:none;
 	}
 
+}
+@media screen and (max-width:700px) {
+	.navbar-brand{
+		font-size:1.5rem;
+	}
 }
 
 div#superContainer{
@@ -150,14 +169,13 @@ div#superContainer{
 	background-size:cover;
 }
 .topimage img{
-	padding-top:65px;
+	padding-top:80px;
 	width:100%;
 }
 
 /*Resume Page*/
 
 .resume{
-	/*border:3px solid grey;*/
 	width:70%;
 	margin:auto;
 	font-family: "cochin";
@@ -181,10 +199,17 @@ h5{
 }
 
 /*Biography Page*/
+.biotext{
+	text-align: center;
+	width: 75%;
+	margin:auto;
+	padding:30px;
+	font-family: "cochin";
 
+}
 /*Art Page*/
 .section1 img{
-	padding-top:65px;
+	padding-top:80px;
 	width:100%;
 }
 .section-content{
@@ -192,6 +217,13 @@ h5{
 	margin:auto;
 	padding:30px;
 	text-align:center;
+	/*font:"cochin";*/
+}
+p{
+	font:"cochin";
+}
+h3{
+	font:"cochin";
 }
 .section2 img{
 	padding-top:65px;
