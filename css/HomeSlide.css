@@ -124,8 +124,14 @@ li{
 .copyright a, .copyright span { 
 	margin: 0 7px; 
 	font-size: 12px; 
-	color: #fff;}
-
+	color: #fff;
+}
+.copyright-sub{
+	text-align:center;
+	color:grey;
+	font:"cochin";
+	font-size: 10px;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -174,3 +180,28 @@ h5{
 	text-indent: 30px;
 }
 
+/*Biography Page*/
+
+/*Art Page*/
+.section1 img{
+	padding-top:65px;
+	width:100%;
+}
+.section-content{
+	width: 75%;
+	margin:auto;
+	padding:30px;
+	text-align:center;
+}
+.section2 img{
+	padding-top:65px;
+	width:100%;
+}
+.section3 img{
+	padding-top:65px;
+	width:100%;
+}
+.section4 img{
+	padding-top:65px;
+	width:100%;
+}
