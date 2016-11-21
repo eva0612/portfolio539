@@ -13,6 +13,9 @@
 #biography{
 	text-shadow: 3px 2px 5px black;
 }
+#UX{
+	text-shadow: 3px 2px 5px black;
+}
 
 /*Homepage*/
 #nav{
@@ -172,6 +175,36 @@ div#superContainer{
 	padding-top:80px;
 	width:100%;
 }
+
+
+
+
+/*UX Page*/
+.UX body{
+	display:flex;
+}
+
+.ux_projects_overall{
+	text-align: center;
+	width: 100%;
+	margin:auto;
+	padding:30px;
+	font-family: "cochin";
+	/*padding-top: 200px;*/
+	/*background-color: grey;*/
+	/*border:solid red 5px;*/
+}
+
+.projects_container{
+	width: 75%;
+	margin:auto;
+	padding:30px;
+	font-family: "cochin";
+	padding-top: 200px;
+	/*border: solid yellow 3px;*/
+}
+
+
 
 /*Resume Page*/
 
