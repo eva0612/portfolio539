@@ -29,6 +29,25 @@ class MainHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('HomeSlide.html')
         self.response.out.write(template.render())
 
+class ArtHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('Art.html')
+        self.response.out.write(template.render())
+
+class BioHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('Biography.html')
+        self.response.out.write(template.render())
+
+class ResumeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('Resume.html')
+        self.response.out.write(template.render())
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/Art.html', ArtHandler),
+    ('/Biography/html', BioHandler),
+    ('/Resume.html', ResumeHandler)
+
 ], debug=True)
