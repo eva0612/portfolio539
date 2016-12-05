@@ -1,42 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Biography_KL</title>
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-
-</head>
-
-<body>
-  <header class="navbar">
-
-        <a class="navbar-brand hidden-sm-up" href="HomeSlide.html">Kehan Liao</a>
-          <ul class="navbar-nav"> 
-            <li class="nav-item" >
-              <a class="nav-item-link" href="UX.html">
-                UX
-              </a>              
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="Art.html">
-                ART
-              </a>              
-            </li>
-      
-            <li class="nav-item">
-              <a class="nav-item-link" id="resume" href="Resume.html">
-                RESUME
-              </a>              
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="Biography.html">
-                BIOGRAPHY
-              </a>              
-            </li>
-          </ul>
- </header>
-
+{% extends "HomeSlide.html" %}
+{% block content %}
 <div class="topimage">
   <img class="topimage" src="static/TheHole.jpeg" alt="TheHole">
 </div>
@@ -123,15 +86,4 @@
 
 
 </div>
-
-  <footer>
-  <p class="copyright-sub">
-    <a>All information &copy;Copyright Kehan Liao.</a>
-    <span>|</span>
-    <span>email adress: khliao@umich.edu</span>
-  </p>
-  </footer>
-</body>
-
-
-</html>
+{% endblock %}

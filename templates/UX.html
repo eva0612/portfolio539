@@ -1,43 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>UX_KL</title>
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-
-</head>
-
-<body class="UX">
-  <header class="navbar">
-
-        <a class="navbar-brand hidden-sm-up" href="HomeSlide.html">Kehan Liao</a>         
-
-          <ul class="navbar-nav"> 
-            <li class="nav-item" >
-              <a class="nav-item-link" id="UX" href="UX.html">
-                UX
-              </a>              
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="Art.html">
-                ART
-              </a>              
-            </li>            
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="Resume.html">
-                RESUME
-              </a>              
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="Biography.html">
-                BIOGRAPHY
-              </a>              
-            </li>
-          </ul>
- </header>
-
+{% extends "HomeSlide.html" %}
+{% block content %}
 <div class="ux_projects_overall">
   <div class="projects_container">
 
@@ -56,8 +18,8 @@
     Method & Skills: Competitive analysis, Sketching, Persona & Storyboard, Interview, Brainstorm, Wireframing, Prototyping, Iteration
   </p>
   <p>
- <strong>What is the problem:</strong> From the research of case studies by specialists in the field, there is a positive correlation between social isolation and depression. A large proportion of people with depression in different stages are also experiencing social isolation. 
-  <strong>Target users:</strong> people with depression who are experiencing isolated interpersonal relationships. <strong>The design idea: </strong>A designed wearable device piece aiming to help people with depression that can provide suggestions and lead to positive thinking. 
+ <strong>What is the problem:</strong> From the research of case studies by specialists in the field, there is a positive correlation between social isolation and depression. A large proportion of people with depression in different stages are also experiencing social isolation.
+  <strong>Target users:</strong> people with depression who are experiencing isolated interpersonal relationships. <strong>The design idea: </strong>A designed wearable device piece aiming to help people with depression that can provide suggestions and lead to positive thinking.
   <a href="https://www.youtube.com/watch?v=boja_iEW5t0"> >.Click here to learn more..</a>
 
   </p>
@@ -72,7 +34,7 @@
   <p>
   <strong>What is the problem:</strong>  People with allergy could go out spontaneously to eat with new friends without concerns. Since people with allergy always have to check if the restaurant is allergy friendly,  if not, they have to decided whether to inconvenient the group to change restaurants or to risk and go without eating.
   <strong>Target users:</strong>  People with fatal allergies.
-  <strong>The design idea: </strong>A built-in app within a messenger that analyze text exchange, if a food invite is sent, user can hover on the restaurant and the app will show a small pop up regarding allergy accommodation of the restaurant. Then the app will auto-generate messages according to the accommodation information and user actions. 
+  <strong>The design idea: </strong>A built-in app within a messenger that analyze text exchange, if a food invite is sent, user can hover on the restaurant and the app will show a small pop up regarding allergy accommodation of the restaurant. Then the app will auto-generate messages according to the accommodation information and user actions.
   <a href="/"> >.Coming soon..</a>
   </p>
   </div>
@@ -86,7 +48,7 @@
   <p>
   <strong>Solar Car Team </strong> as a very successful student organization is facing difficulty of retain new memberships. According to the meeting with the team, they suggested that the new recruits might quit the team because their feeling of disorientation with their assigned 2 months-long training projects. The projects serve with training purposes happened at the beginning each academic year. It was suggested by the team leader that the organization work flows might live outside of the new recruits’ expectation, so then a large number of new comers quit the team from the first semester to the second. The reasons behind are not specified. Solar Car Team leaders are expecting us, UX Repairo to help finding out a solution to this.</p>
   <p>
-  In order to find out the real problem of this issue, we, UX Repairo conducted several rounds of contexual interview with leaders, experienced team members, new recruits, and former members. After gained insights, we re-evaluated the problem and developed design ideas. 
+  In order to find out the real problem of this issue, we, UX Repairo conducted several rounds of contexual interview with leaders, experienced team members, new recruits, and former members. After gained insights, we re-evaluated the problem and developed design ideas.
   </p>
  <a href="/"> >.Coming soon..</a>
   </div>
@@ -95,21 +57,9 @@
   <h1>Open Air Accessibility Challenge: Summit IDG.</h1>
   <p>User Interviews, Interface Design, Website Design</p>
   Our team Michina helped client Summit IDG redesign their website for a better accessibility.
-  <p> 
+  <p>
  <a href="/"> >.More..</a>
   </p>
   </div>
 </div>
-
-
-  <footer>
-  <p class="copyright-sub">
-    <a>All information &copy;Copyright Kehan Liao.</a>
-    <span>|</span>
-    <span>email adress: khliao@umich.edu</span>
-  </p>
-  </footer>
-</body>
-
-
-</html>
+{% endblock %}
