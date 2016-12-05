@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>{{ title }}</title>
-<link rel="stylesheet" type="text/css" href="static/style.css">
-{{ css }}
-
-</head>
-<body>
-
-  <header class="navbar">
+{% extends "base.html" %}
+{% block content %}
+  <!-- <header class="navbar">
 
         <a class="navbar-brand hidden-sm-up" id="navbar-brand" href="/">KEHAN LIAO</a>
 
@@ -36,9 +27,8 @@
             </li>
           </ul>
 
- </header>
-
-{% block content %}
+ </header> -->
+ {{ css }}
 <div class="section">
   <div class="bg"><img src="static/OrgBuilding.jpg" alt=""></div>
 </div>
@@ -51,11 +41,6 @@
 
 <div class="section">
   <div class="bg"><img src="static/IceBreaking.png" alt=""></div>
-  <p class="copyright">
-    <a>All information &copy;Copyright Kehan Liao.</a>
-    <span>|</span>
-    <span>email adress: khliao@umich.edu</span>
-  </p>
 </div>
 
 <script src=" http://hm.baidu.com/h.js?988268596e7a833ffbfb2e9f82d93e18"></script>
@@ -74,14 +59,3 @@ $(function(){
 });
 </script>
 {% endblock %}
-
-<footer>
-  <p class="copyright-sub">
-    <a>All information &copy;Copyright Kehan Liao.</a>
-    <span>|</span>
-    <span>email adress: khliao@umich.edu</span>
-  </p>
-</footer>
-
-</body>
-</html>

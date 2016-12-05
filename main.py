@@ -30,6 +30,7 @@ class MainHandler(webapp2.RequestHandler):
         css = "<link rel=\"stylesheet\" href=\"http://www.dowebok.com/demo/2014/77/css/jquery.fullPage.css\">"
         template_vars = {
             "title" : title,
+            "name" : "HomeSlide",
             "css" : css
         }
         template = JINJA_ENVIRONMENT.get_template('HomeSlide.html')
@@ -40,7 +41,8 @@ class ArtHandler(webapp2.RequestHandler):
     def get(self):
         title = "KL_Art"
         template_vars = {
-          "title" : title
+          "title" : title,
+          "name" : "Art"
         }
         template = JINJA_ENVIRONMENT.get_template('Art.html')
         self.response.out.write(template.render(template_vars))
@@ -50,7 +52,8 @@ class BioHandler(webapp2.RequestHandler):
     def get(self):
         title = "KL_Bio"
         template_vars = {
-          "title" : title
+          "title" : title,
+          "name" : "Biography"
         }
         template = JINJA_ENVIRONMENT.get_template('Biography.html')
         self.response.out.write(template.render(template_vars))
@@ -60,7 +63,8 @@ class ResumeHandler(webapp2.RequestHandler):
     def get(self):
         title = "KL_Resume"
         template_vars = {
-          "title" : title
+          "title" : title,
+          "name" : "Resume"
         }
         template = JINJA_ENVIRONMENT.get_template('Resume.html')
         self.response.out.write(template.render(template_vars))
@@ -70,16 +74,23 @@ class UXHandler(webapp2.RequestHandler):
     def get(self):
         title = "KL_UX"
         template_vars = {
-          "title" : title
+          "title" : title,
+          "name" : "UX"
         }
         template = JINJA_ENVIRONMENT.get_template('UX.html')
         self.response.out.write(template.render(template_vars))
 
+
+class ErrorHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write("<h1>Try a different URL;)</h1>")
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/Art.html', ArtHandler),
-    ('/Biography.html', BioHandler),
-    ('/Resume.html', ResumeHandler),
-    ('/UX.html', UXHandler)
+    ('/Art', ArtHandler),
+    ('/Biography', BioHandler),
+    ('/Resume', ResumeHandler),
+    ('/UX', UXHandler),
+    ("/.*", ErrorHandler)
 
 ], debug=True)

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+ <body>
+
+   {% if name %}
+
+   {% endif %}
+
+    <header class="navbar">
+
+      <a class="navbar-brand hidden-sm-up" href="/"
+          {% if name == "HomeSlide" %}
+          class = "current"
+          {% endif %}
+          >KEHAN LIAO</a>
+        <ul>
+
+         <li><a href="UX"
+          {% if name == "UX" %}
+              class = "current"
+              {% endif %}
+          >UX</a></li>
+         <li><a href="Art"
+          {% if name == "Art" %}
+              class = "current"
+              {% endif %}
+          >Art</a></li>
+          <li><a href="Resume"
+         {% if name == "Resume" %}
+               class = "current"
+               {% endif %}
+           >Resume</a></li>
+         <li><a href="Biography"
+        {% if name == "Biography" %}
+              class = "current"
+              {% endif %}
+          >Biography</a></li>
+
+        </ul>
+    </header>
+    {% block content %}
+      You should never see this!!
+    {% endblock %}
+
+    <footer>
+      <p class="copyright-sub">
+        <a>All information &copy;Copyright Kehan Liao.</a>
+        <span>|</span>
+        <span>email adress: khliao@umich.edu</span>
+      </p>
+    </footer>
+
+    </body>
+    </html>
